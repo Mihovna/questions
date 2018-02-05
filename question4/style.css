@@ -1,0 +1,50 @@
+body {
+    background-color: bisque;
+    margin: -8px;
+}
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    height: 800px;
+    border-radius: 2px;
+    background-color: white;
+}
+.form {
+    display: inline-block;
+    top: 100px;
+    left: 100px;
+    margin: 100px;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+.active {
+    pointer-events: none;
+    transform: translate(0px, 5px);
+    box-shadow: 0 -5px 0 0;  /*не работает*/
+    background-color: #3C93D5;  /*не работает*/
+}
+.blue {
+    background-color: #55acee;
+    box-shadow: 0 5px 0 0 #3C93D5;
+}
+.red {
+    background-color: #e74c3c;
+    box-shadow: 0 5px 0 0 #CE3323;
+}
+.text1, .text2 {
+
+}
+.hidden {
+    display: none
+}
