@@ -3,20 +3,17 @@ body {
     margin: -8px;
 }
 .container {
-    position: relative;
     margin: 0 auto;
     width: 900px;
     height: 800px;
     border-radius: 2px;
     background-color: white;
+    text-align: center;
+    padding-top: 100px;
 }
-.form {
+.buttons, .content {
     display: inline-block;
-    top: 100px;
-    left: 100px;
-    margin: 100px;
 }
-
 .btn {
     cursor: pointer;
     border-radius: 5px;
@@ -28,12 +25,6 @@ body {
     position: relative;
     display: inline-block;
 }
-.active {
-    pointer-events: none;
-    transform: translate(0px, 5px);
-    box-shadow: 0 -5px 0 0;  /*не работает*/
-    background-color: #3C93D5;  /*не работает*/
-}
 .blue {
     background-color: #55acee;
     box-shadow: 0 5px 0 0 #3C93D5;
@@ -42,9 +33,22 @@ body {
     background-color: #e74c3c;
     box-shadow: 0 5px 0 0 #CE3323;
 }
-.text1, .text2 {
-
+.blue.active {
+    pointer-events: none;
+    transform: translate(0px, 5px);
+    box-shadow: none;
+    background-color: #3C93D5;
 }
-.hidden {
-    display: none
+.red.active {
+    pointer-events: none;
+    transform: translate(0px, 5px);
+    box-shadow: none;
+    background-color: #CE3323;
+}
+
+.text {
+    visibility: hidden;
+}
+.visible {
+    visibility: visible;
 }
